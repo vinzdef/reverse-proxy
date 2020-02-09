@@ -12,6 +12,9 @@ services:
   ## PROXY ##
   ###########
   nginx:
+    ports:
+      - "80:80"
+      - "443:443"
     volumes:
       - vhost_:/etc/nginx/vhost.d
       - nginx_:/etc/nginx/conf.d
