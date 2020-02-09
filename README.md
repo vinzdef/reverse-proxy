@@ -4,6 +4,16 @@ This battle-tested, production-ready reverse proxy routes incoming requests to t
 
 📤🔀🐳🐳🐳🐳🐳
 
+### Credits:
+[@progress44](https://github.com/progress44) — [Original Concept](https://github.com/blimpair/loadbalancer), Dockergen, Nginx, docker-composes
+
+[@jrcs](https://github.com/jrcs) — [docker-letsencrypt-nginx-proxy-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion)
+
+I've basically just rearrangged their code/configs for three reasons: 
++ to be more modular and concise
++ to build and push automatically on dockerhub
++ to have a version I can manage separately
+
 ## Usage
 
 **Without** https (Port 80 of your machine)
@@ -105,7 +115,3 @@ The first two are required to register containers and route incoming requests.
 The last one makes up certificates on the fly so you don't have to worry about HTTPS. 
 [Or maybe you do](https://medium.com/swlh/why-lets-encrypt-is-a-really-really-really-bad-idea-d69308887801)
 
-### Credits:
-[@progress44](https://github.com/progress44) — [Original Concept](https://github.com/blimpair/loadbalancer), Dockergen, Nginx, docker-composes
-
-[@jrcs](https://github.com/jrcs) — [docker-letsencrypt-nginx-proxy-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion)
